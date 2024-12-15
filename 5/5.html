@@ -1,0 +1,79 @@
+
+  <style>
+  .container {
+    width: 550px;
+    height: 85px;
+    border: 2px solid rgb(176,159,0);
+    border-radius: 10px;
+    position: absolute;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: 35px;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    left: 300px;
+    background: rgb(2,0,36);
+    background: linear-gradient(350deg, rgba(2,0,36,1) 0%, rgba(217,25,25,1) 38%, rgba(176,159,0,1) 69%);
+  }
+  
+  button {
+      width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid rgb(176,159,0);
+    background-color: black;
+    color: rgb(176,159,0);
+  cursor: pointer;
+  }
+  
+  input {
+    margin: 0;
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid rgb(176,159,0);
+  }
+
+  ::placeholder {
+    font-size: 8px;
+  }
+
+  .img {
+    display: flex;
+    width: 550px;
+    height: 100%;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    flex-direction: row;
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+
+  .error {
+    color: red;
+    font-size: 8px;
+    margin: 0;
+    padding: 0;
+  }
+
+  </style>
+<div class="container">
+  <div>
+      <legend>Номер страницы</legend>
+      <input type="number" class="inpt-str" placeholder="введите номер страницы">
+      <div class="error-str error"></div>
+      <div class="error-str-lim error"></div>
+  </div>
+  <div>
+      <legend>Лимит</legend>
+      <input type="number" class="inpt-lim" placeholder="лимит">
+      <div class="error-lim error"></div>
+  </div>
+  <button>Запрос</button>
+</div>
+<div class="img"></div>
+<script src="5.js"></script>
+  
